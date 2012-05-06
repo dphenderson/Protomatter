@@ -1,0 +1,17 @@
+<h3>Original contribution by</h3>
+<p class="Contributor">
+	David Henderson of Chaoswerks Design<br />
+	<a href="mailto:dph@chaoswerks.com">dph@chaoswerks.com</a><br />
+	<a href="http://chaoswerks.com">http://chaoswerks.com</a><br />
+</p>
+<hr/>
+<div class="License">
+	<h3>About Matter Arts Skin and Container Set</h3>
+	<p class="Owner">
+  <strong>Version 1.0.0</strong><br /><br />
+	A proprietary skin and container set using html5 standards and css3 where available with fallbacks to older standards for Internet Explorer less than or equal to version 9<br />
+	</p>
+</div>
+
+
+

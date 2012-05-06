@@ -1,0 +1,198 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="skin.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/typography/lists/horizontal-list";
+@import "compass/css3";
+@import "vars";
+
+body {
+  background-color: $bodyBackgroundColor;
+  color: $bodyTextColor;
+  font: {
+    family: "Open Sans";
+    size: $fontHeight;
+  }
+}
+
+#main {
+  position: relative;
+  @include background(image-url("bgiie.png"));
+  @include background(image-url("bgi1.png") -28px -74px, image-url("bgi2.png") -78px -1px);
+  margin: 0 auto;
+  width: $fullWidth;
+  height: $fullHeight;
+  #header {
+    position: relative;
+    height: $headerHeight;
+    width: $fullWidth;
+    .breadcrumb {
+      position: relative;
+      float: left;
+      margin: {
+        left: $logoBoxClear;
+        top: $fullUnit;
+      }
+      height: $fullUnit;
+    }
+    .currentdate {
+      position: relative;
+      float: right;
+      margin: {
+        right: $textRightPosition;
+        top: $fullUnit;
+      }
+      height: $fullUnit;
+    }
+    #logo-box {
+      position: relative;
+      top: $logoBoxTop * $fontSizeChangeAdjustment;
+      left: $logoBoxLeft * $fontSizeChangeAdjustment;
+      height: $boxHeight * $fontSizeChangeAdjustment;
+      width: $boxWidth * $fontSizeChangeAdjustment;
+      border: $boxBorderWidth * $fontSizeChangeAdjustment dashed $boxBorderColor;
+      @include border-radius($boxBorderRadius * $fontSizeChangeAdjustment);
+      font-size: $logoBoxFontHeight;
+      .logo {
+        position: absolute;
+        top: $logoTopPosition * $fontSizeChangeAdjustment;
+        left: $logoLeftPosition * $fontSizeChangeAdjustment;
+      }
+      .namepane {
+        position: absolute;
+        top: ($logoTopPosition + $navBarHeight + $nameTopClear) * $fontSizeChangeAdjustment;
+        left: $logoLeftPosition * $fontSizeChangeAdjustment;
+      }
+      .datepane {
+        position: absolute;
+        top: ($logoTopPosition + $navBarHeight + ($logoBoxFontHeight / $logoBoxFontHeight) +$nameTopClear + $dateTopClear) * $fontSizeChangeAdjustment;
+        left: $logoLeftPosition * $fontSizeChangeAdjustment;
+      }
+      .issuepane {
+        position: absolute;
+        bottom: $issueBottomPosition * $fontSizeChangeAdjustment;
+        right: $issueRightPosition * $fontSizeChangeAdjustment;
+      }
+    }
+    #nav {
+      position: relative;
+      top: $zeroPosition - $boxHeight + $navBarTop - (2 * $boxBorderWidth);
+      height: $navBarHeight;
+      width: $fullWidth;
+      @include background(linear-gradient(left, $transparentColor 0%, $fortyfivePctColor 30%, $fortyfivePctColor 70%, $transparentColor 100%));
+      > div {
+        position: relative;
+        left: $logoBoxClear;
+        top: $navBarHeight - $fullUnit - $menuBottomClear;
+        height: $fullUnit;
+      }
+    }
+  }
+  .fictionContainer, .poemContainer, .matterContainer {
+    position: relative;
+    top: $contentPaneTopClear;
+    left: $logoBoxLeft + $boxWidth + (2 * $boxBorderWidth) + $contentPaneLeftClear;
+    width: $contentPaneWidth;
+    height: $contentPaneHeight;
+  }
+  .leftIndexContainer, .indexContainer, .rightIndexContainer {
+		position: relative;
+		top: $contentPaneTopClear;
+		overflow: auto;
+		height: $contentPaneHeight;
+    width: (($contentPaneWidth) / 3);
+  }
+	.leftIndexContainer {
+		top: $contentPaneTopClear;
+    left: $logoBoxLeft + $boxWidth + (2 * $boxBorderWidth) + $contentPaneLeftClear;
+	}
+	.indexContainer {
+		top: $zeroPosition - $contentPaneTopClear - $contentPaneHeight;
+		left: $logoBoxLeft + $boxWidth + (2 * $boxBorderWidth) + $contentPaneLeftClear + ($contentPaneWidth / 3);
+	}
+	.rightIndexContainer {
+		top: $zeroPosition - (3 * $contentPaneTopClear) - (2 * $contentPaneHeight);
+    left: $logoBoxLeft + $boxWidth + (2 * $boxBorderWidth) + $contentPaneLeftClear + (2 * ($contentPaneWidth / 3));
+	}
+  .col1Container {
+    position: relative;
+    top: $contentPaneTopClear;
+    left: $logoBoxLeft + $boxWidth + (2 * $boxBorderWidth) + $contentPaneLeftClear;
+    width: ($contentPaneWidth / 2) - $contentPaneTopClear;
+    height: $contentPaneHeight;
+  }
+  .col2Container {
+    position: relative;
+    top: $contentPaneTopClear - $contentPaneHeight;
+    left: $logoBoxLeft + $boxWidth + (2 * $boxBorderWidth) + (1.5 * $contentPaneLeftClear) + ($contentPaneWidth / 2);
+    width: ($contentPaneWidth / 2) - $contentPaneTopClear;
+    height: $contentPaneHeight;
+  }
+  .fictionContainer, .poemContainer, .matterContainer, .col1Container, .col2Container {
+    @include background-image(linear-gradient(top, $seventyninePctColor 0%, $seventysevenPctColor 37%, $seventyPctColor 51%, $sixtythreePctColor 57%, $fiftyPctColor 66%, $seventeenPctColor 81%, $sixPctColor 88%, $transparentColor 93%, $transparentColor 100%));
+    overflow: auto;
+    color: black;
+    .lvl1-title {
+      margin: $fullUnit * (9 / $unitlessFontHeight);
+      font: {
+        size: 150%;
+        weight: bold;
+      }
+    }
+    .lvl2-title {
+      margin: $fullUnit * (9 / $unitlessFontHeight);
+      font: {
+        size: 125%;
+        weight: bold;
+      }
+    }
+    p {
+      margin: $fullUnit * (2 / $unitlessFontHeight) $fullUnit * (9 / $unitlessFontHeight);
+      line-height: 1.3;
+      text-indent: $fullUnit * (25 / $unitlessFontHeight);
+      text-align: justify;
+    }
+    p:first-child {
+      text-indent: 0;
+    }
+	.last-on-page {
+		padding-bottom: 25%;
+	}
+  }
+  #footer {
+    position: relative;
+    bottom: $zeroPosition;
+    height: $fullUnit + $footerHeight;
+    width: $fullWidth;
+    #sitelinks {
+      @include horizontal-list-container;
+      position: relative;
+      float: left;
+      margin-left: $logoBoxLeft + $logoLeftPosition;
+      height: $fullUnit;
+      li {
+        @include horizontal-list-item($listItemClear);
+        border-right: thin solid $boxBorderColor;
+      }
+      li.last {
+        border-right-style: none;
+      }
+    }
+    #copyrightnotice {
+      position: relative;
+      float: right;
+      margin-right: $textRightPosition;
+      height: $fullUnit;
+    }
+  }
+}
+.box {
+  height: $boxHeight;
+  width: $boxWidth;
+  border: $boxBorderWidth dashed $boxBorderColor;
+  @include border-radius($boxBorderRadius);
+}
+
+@import "menu";

@@ -1,0 +1,157 @@
+<dotnetnuke type="Package" version="5.0">
+	<packages>
+		<package name="MatterArts.MatterArts.Skin" type="Skin" version="1.0.0">
+			<friendlyName>Matter Arts</friendlyName>
+			<description>A proprietary skin package coded by David P Henderson based on an original design by Shan Wells.</description>
+			<owner>
+				<name>MatterArts.org</name>
+				<organization>Matter Arts</organization>
+				<url>www.matterarts.org</url>
+				<email>support@matterarts.org</email>
+			</owner>
+			<license src="skinlicense.txt"></license>
+			<releaseNotes src="skinreleasenotes.txt"></releaseNotes>
+			<dependencies>
+				<dependency type="CoreVersion">05.02.00</dependency>
+			</dependencies>
+			<components>
+				<component type="File">
+					<files>
+						<file>
+							<name>skinlicense.txt</name>
+						</file>
+						<file>
+							<name>skinreleasenotes.txt</name>
+						</file>
+					</files>
+				</component>
+				<component type="Skin">
+					<skinFiles>
+						<skinName>MatterArts</skinName>
+						<basePath />
+						<skinFile>
+							<name>fiction.ascx</name>
+						</skinFile>
+						<skinFile>
+							<name>fiction.doctype.xml</name>
+						</skinFile>
+						<skinFile>
+							<name>index.ascx</name>
+						</skinFile>
+						<skinFile>
+							<name>index.doctype.xml</name>
+						</skinFile>
+						<skinFile>
+							<name>matter.ascx</name>
+						</skinFile>
+						<skinFile>
+							<name>matter.doctype.xml</name>
+						</skinFile>
+						<skinFile>
+							<name>poetry.ascx</name>
+						</skinFile>
+						<skinFile>
+							<name>poetry.doctype.xml</name>
+						</skinFile>
+						<skinFile>
+							<name>two_column.ascx</name>
+						</skinFile>
+						<skinFile>
+							<name>two_column.doctype.xml</name>
+						</skinFile>
+						<skinFile>
+							<name>skin.css</name>
+						</skinFile>
+						<skinFile>
+							<name>ie.css</name>
+						</skinFile>
+						<skinFile>
+							<name>ie6.css</name>
+						</skinFile>
+						<skinFile>
+							<path>images</path>
+							<name>bgi1.png</name>
+						</skinFile>
+						<skinFile>
+							<path>images</path>
+							<name>bgi2.png</name>
+						</skinFile>
+						<skinFile>
+							<path>images</path>
+							<name>bgiie.png</name>
+						</skinFile>
+						<skinFile>
+							<path>images</path>
+							<name>bgiie6.png</name>
+						</skinFile>
+						<skinFile>
+							<path>images</path>
+							<name>contentpane.png</name>
+						</skinFile>
+						<skinFile>
+							<path>images</path>
+							<name>contentpaneie6.png</name>
+						</skinFile>
+						<skinFile>
+							<path>images</path>
+							<name>mainmenu.png</name>
+						</skinFile>
+						<skinFile>
+							<path>images</path>
+							<name>mainmenuie6.png</name>
+						</skinFile>
+						<skinFile>
+							<path>images</path>
+							<name>protomatterLogo.png</name>
+						</skinFile>
+					</skinFiles>
+				</component>
+			</components>
+		</package>
+		<package name="MatterArts.MatterArts.Container" type="Container" version="1.0.0">
+			<friendlyName>Matter Arts</friendlyName>
+			<description>A proprietary skin package coded by David P Henderson based on an original design by Shan Wells.</description>
+			<owner>
+				<name>MatterArts.org</name>
+				<organization>Matter Arts Collaborative</organization>
+				<url>www.matterarts.org</url>
+				<email>support@matterarts.org</email>
+			</owner>
+			<license src="containerlicense.txt"></license>
+			<releaseNotes src="containerreleasenotes.txt"></releaseNotes>
+			<dependencies>
+				<dependency type="CoreVersion">05.02.00</dependency>
+			</dependencies>
+			<components>
+				<component type="File">
+					<files>
+						<file>
+							<name>containerlicense.txt</name>
+						</file>
+						<file>
+							<name>containerreleasenotes.txt</name>
+						</file>
+					</files>
+				</component>
+				<component type="Container">
+					<containerFiles>
+						<containerName>MatterArts</containerName>
+						<containerFile>
+							<name>no_title.ascx</name>
+						</containerFile>
+						<containerFile>
+							<name>rounded_box.ascx</name>
+						</containerFile>
+						<containerFile>
+							<name>title_h1.ascx</name>
+						</containerFile>
+						<containerFile>
+							<name>title_h2.ascx</name>
+						</containerFile>
+					</containerFiles>
+				</component>
+			</components>
+		</package>
+	</packages>
+</dotnetnuke>
+

@@ -1,0 +1,18 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+#main {
+	background-image: image-url("bgiie6.png");
+}
+#nav {
+  background-image: image-url("mainmenuie6.png");
+}
+#contentpane {
+	background: {image: image-url("contentpaneie6.png");
+		attachment: scroll;
+		position: 0 0;
+		repeat: repeat-x;
+	}
+}

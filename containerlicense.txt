@@ -1,0 +1,18 @@
+<h3>Original contribution by</h3>
+<p class="Contributor">
+	David Henderson of Chaoswerks Design<br />
+	<a href="mailto:dph@chaoswerks.com">dph@chaoswerks.com</a><br />
+	<a href="http://chaoswerks.com">http://chaoswerks.com</a><br />
+</p>
+<hr/>
+<div class="License">
+	<h3>License</h3>
+	<p class="Owner">
+		Matter Arts  <a href=http://www.matterarts.org>http://www.matterarts.org</a><br />
+		Copyright (c) 2012<br />
+		by Matter Arts Collaborative<br />
+	</p>
+    <p>All rights reserved. No part of this work may be used without the express written consent of the Matter Arts Collaborative.</p>
+</div>
+
+
