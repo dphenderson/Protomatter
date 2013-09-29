@@ -1,4 +1,4 @@
 Protomatter
 ===========
 
-A DNN skin and container set for matterarts.org, an  on-line literary arts journal.
+This project is dead. All artwork contained in this project is copyright protected by MatterArts or its contributors. Contact pablo@matterarts.org for more information.
